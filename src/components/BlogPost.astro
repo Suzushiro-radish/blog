@@ -1,0 +1,24 @@
+---
+type Props = {
+	title: string;
+	url?: string;
+};
+
+const { title, url } = Astro.props;
+---
+
+<li>
+	<a href={url}>{title}</a>
+</li>
+
+<style>
+	li {
+		margin-bottom: 1rem;
+	}
+	li a {
+		text-decoration: none;
+	}
+	li a:hover {
+		text-decoration: underline;
+	}
+</style>
