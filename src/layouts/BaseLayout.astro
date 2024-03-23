@@ -18,8 +18,10 @@ const { pageTitle } = Astro.props;
 	</head>
 	<body>
 		<Header />
-		<h1>{pageTitle}</h1>
-		<slot />
+		<main>
+			<h1>{pageTitle}</h1>
+			<slot />
+		</main>
 		<Footer />
 		<script>
 			import "../scripts/menu";
@@ -29,17 +31,19 @@ const { pageTitle } = Astro.props;
 
 <style>
 	html {
-		background-color: #212223;
+		background-color: #fff;
 		font-family: sans-serif;
-		color: azure;
 	}
 
 	body {
 		margin: 0 auto;
 		width: 100%;
 		max-width: 850px;
-		padding: 16px;
 		line-height: 1.5;
+	}
+
+	main {
+		padding: 1rem;
 	}
 
 	h1 {
