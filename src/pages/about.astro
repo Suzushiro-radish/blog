@@ -7,18 +7,14 @@ const identity = {
 	name: "Daiki Takagi",
 	age: 26,
 	location: "Tokyo, Japan",
-	hobbies: ["programming", "gaming", "guitar"],
+	hobbies: ["programming", "gaming", "guitar", "cello"],
 };
 
 const skills = ["JavaScript", "TypeScript", "Rust", "PHP", "React"];
-
-const happy = true;
-const finished = true;
-const goal = 3;
 ---
 
 <BaseLayout pageTitle={pageTitle}>
-	<h2>... and my new Astro site!</h2>
+	<h2>... and my new site!</h2>
 
 	<p>Here are a few facts about me:</p>
 	<ul>
@@ -35,10 +31,4 @@ const goal = 3;
 	<ul>
 		{skills.map((skill) => <li class="skill">{skill}</li>)}
 	</ul>
-
-	{happy && <p>I am happy to be learning Astro!</p>}
-
-	{finished && <p>I finished this tutorial!</p>}
-
-	{goal === 3 ? <p>My goal is to finish in 3 days.</p> : <p>My goal is not 3 days.</p>}
 </BaseLayout>

@@ -9,8 +9,8 @@ const pageTitle = "Blog";
 <BaseLayout pageTitle={pageTitle}>
 	<h2>This is my new blog page!</h2>
 	<p>
-		I am working through Astro's introductory tutorial. This is the third page on my website, and it
-		will become my first ever blog!
+		I was working through Astro's introductory tutorial. This is the third page on my website, and
+		it has become my first ever blog!
 	</p>
 	<ul>
 		{allPosts.map((post) => <BlogPost url={`/posts/${post.slug}/`} title={post.data.title} />)}
