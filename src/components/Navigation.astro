@@ -1,9 +1,31 @@
 ---
+
 ---
 
 <div class="nav-links">
-    <a href="/">Home</a>
-    <a href="/about">About</a>
-    <a href="/blog">Blog</a>
-    <a href="/tags">Tags</a>
+	<a href="/">Home</a>
+	<a href="/about">About</a>
+	<a href="/blog">Blog</a>
+	<a href="/tags">Tags</a>
 </div>
+
+<style>
+	.nav-links {
+		display: flex;
+		justify-content: space-around;
+		margin-bottom: 20px;
+	}
+
+	.nav-links a {
+		text-decoration: none;
+		font-weight: bold;
+		color: azure;
+		padding: 0 10px;
+	}
+
+	.nav-links a:hover,
+	.nav-links a:focus {
+		background-color: #e0e0e0;
+		color: #212223;
+	}
+</style>
